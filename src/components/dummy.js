@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import User from "./user";
 
 class Dummy extends React.Component {
@@ -15,8 +16,9 @@ class Dummy extends React.Component {
       <>
         <h1>Hello {isLoggedIn ? "User" : "Guest"}</h1>
         <button onClick={() => this.setState({ isLoggedIn: !isLoggedIn })}>
-          {isLoggedIn ? "Logout" : "Sign In"}{" "}
-        </button>
+          {isLoggedIn ? "Logout" : "Sign In"}{" "}</button>
+            <Link to="/todd"> Todd </Link>
+            <Link to="/becca"> becca </Link>
         <User isLoggedIn={isLoggedIn} name={"Bobby"} />
       </>
     );

@@ -1,4 +1,5 @@
 import React from 'react' 
+import {Link} from 'react-router-dom'
 
 function User(props) {
     const { isLoggedIn, name } = props
@@ -7,7 +8,10 @@ function User(props) {
     return null
 }
     return(
+        <>
     <p>Hello {name}. lorem ipsom alsdkfj alsdkjflasdflkj dlkas jldfj alsd lksd flas d </p>
+    <Link to="/"> Home </Link>
+    </>
     )
 }
 
