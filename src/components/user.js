@@ -10,7 +10,7 @@ function User(props) {
     return(
         <>
     <p>Hello {name}. lorem ipsom alsdkfj alsdkjflasdflkj dlkas jldfj alsd lksd flas d </p>
-    <Link to="/"> Home </Link>
+    <Link style={{  color: 'white' }} to="/"> Home </Link>
     </>
     )
 }

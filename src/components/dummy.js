@@ -17,8 +17,8 @@ class Dummy extends React.Component {
         <h1>Hello {isLoggedIn ? "User" : "Guest"}</h1>
         <button onClick={() => this.setState({ isLoggedIn: !isLoggedIn })}>
           {isLoggedIn ? "Logout" : "Sign In"}{" "}</button>
-            <Link to="/todd"> Todd </Link>
-            <Link to="/becca"> becca </Link>
+            <Link style={{  color: 'white' }} to="/todd"> Todd </Link>
+            <Link style={{  color: 'grey' }}to="/becca"> becca </Link>
         <User isLoggedIn={isLoggedIn} name={"Bobby"} />
       </>
     );
